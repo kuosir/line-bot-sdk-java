@@ -204,7 +204,7 @@ public class LineMessagingClientBuilder {
         if (additionalInterceptors != null) {
             additionalInterceptors.forEach(okHttpClientBuilder::addInterceptor);
         }
-        okHttpClientBuilder.addInterceptor(buildLoggingInterceptor());
+        // okHttpClientBuilder.addInterceptor(buildLoggingInterceptor());
 
         // Set timeout.
         okHttpClientBuilder
